@@ -41,18 +41,28 @@ var yc=Math.floor(Math.random()*4);
 
 var xc2=Math.floor(Math.random()*4);
 var yc2=Math.floor(Math.random()*4);
+var number="2";
 
 function draw(){
+
+   
     var coord =[75,225,375,525];
     ctx.drawImage(grid, 0,0,600,600);
     ctx.font = "50px Comic Sans MS";
 ctx.fillStyle = "red";
 //centering elements
 
+if(xc==xc2 && yc==yc2){
 
+    ctx.fillText(String(Number(number)*2), coord[xc],coord[yc]);
 
-ctx.fillText("2", coord[xc],coord[yc]);
-ctx.fillText("2", coord[xc2],coord[yc2]);
+}
+else{
+
+ctx.fillText(number, coord[xc],coord[yc]);
+ctx.fillText(number, coord[xc2],coord[yc2]);
+
+}
 
 }
 
