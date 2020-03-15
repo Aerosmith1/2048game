@@ -1,0 +1,62 @@
+#canvas{
+
+    background-color:black;
+    display:block;
+    margin:auto;
+    margin-top:10px;
+
+}
+
+#header{
+
+width:600px;
+margin:auto;
+
+}
+
+#header .f1{
+
+    font-size:60px;
+    color: darkgrey;
+ 
+   
+    
+}
+
+#header .f2{
+
+    font-size:20px;
+    padding:5px 30px 30px 30px;
+    color: darkgrey;
+    background-color: teal;
+
+}
+
+
+#header .f3{
+
+    clear:both;
+    margin:30px;
+    
+
+}
+
+#header .f3 button{
+
+    background-color: teal;
+    font-size:30px;
+
+}
+
+
+
+
+#header .f2,.f1{
+
+height:20px;
+float:left;
+margin:40px;
+
+
+}
+
