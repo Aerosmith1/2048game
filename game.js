@@ -11,6 +11,7 @@ document.addEventListener('keydown', event=>{
 
         case 37: //left 
         moveLeft();
+        draw();
         
         break;
 
@@ -20,11 +21,13 @@ document.addEventListener('keydown', event=>{
         break;
 
         case 39: //right
-        game.moveRight();
+        moveRight();
+        draw();
         break;
 
         case 40: //down
-        game.moveDown();
+        moveDown();
+        draw();
         break;
         
     }
@@ -73,4 +76,51 @@ function moveUp(){
         }
 
 }
+
+
+function moveLeft(){
+
+    if( xc!=0 ){
+
+    xc-=1;
+  
+    }
+    if(xc2!=0 ){
+
+        xc2-=1;
+      
+        }
+
+}
+
+function moveRight(){
+
+    if( xc!=3 ){
+
+    xc+=1;
+  
+    }
+    if(xc2!=3 ){
+
+        xc2+=1;
+      
+        }
+
+}
+
+function moveDown(){
+
+    if( yc!=3 ){
+
+    yc+=1;
+  
+    }
+    if(yc2!=3 ){
+
+        yc2+=1;
+      
+        }
+
+}
+
 
