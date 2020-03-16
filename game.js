@@ -64,11 +64,12 @@ function draw(moved){
   
     ctx.drawImage(grid, 0,0,600,600);
 
-    createcell();
+    
 
     ctx.font = "70px Comic Sans MS";
 ctx.fillStyle = "#9ea7a8";
 ctx.fillText(number, coord[xc],coord[yc]);
+map[yc][xc]=2;
 
 ctx.fillText(number, coord[xc2],coord[yc2]);
 map[yc2][xc2]=2;
@@ -255,8 +256,3 @@ function reset(stepyc,stepxc){
 }
 
 
-function createcell(){
-
-
-
-}
